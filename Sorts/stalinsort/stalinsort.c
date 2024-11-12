@@ -23,9 +23,7 @@ int stalinSort(int arr[], int n, int **sortedArr) {
         if (arr[i] >= (*sortedArr)[j - 1]) { // If the element is in non-decreasing order
             (*sortedArr)[j++] = arr[i];      // Add it to the sorted array
         }
-       
     }
-
     return j; // Return the number of elements in the sorted array
 }
 
