@@ -22,7 +22,7 @@
 
 <h2>How to Use</h2>
 <ol>
-  <li>Clone the repository: <code>git clone https://github.com/yourusername/project-dsa-in-c.git</code></li>
+  <li>Clone the repository: <code>git clone https://github.com/propanedreams/project-dsa-in-c.git</code></li>
   <li>Navigate to the folder: <code>cd project-dsa-in-c</code></li>
   <li>Compile and run: Use your favorite C compiler to test the implementations.</li>
 </ol>
