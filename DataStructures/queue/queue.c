@@ -138,9 +138,29 @@ int main() {
     dequeue(queue);
     dequeue(queue);
 
-    // Display the queue after dequeue
+    // Display the queue after dequeuing
     printf("\nQueue after dequeuing:\n");
     displayQueue(queue);
+
+    // Enqueue more characters
+    printf("\nAdding more characters to the queue:\n");
+    enqueue(queue, "Bobby Singer");
+    enqueue(queue, "Charlie Bradbury");
+    enqueue(queue, "Jack Kline");
+
+    // Display the updated queue
+    printf("\nUpdated queue:\n");
+    displayQueue(queue);
+
+    // Empty the queue completely
+    printf("\nEmptying the queue:\n");
+    while (queue->front != NULL) {
+        dequeue(queue);
+    }
+
+    // Try to dequeue from an empty queue
+    printf("\nTrying to dequeue from an empty queue:\n");
+    dequeue(queue);
 
     // Free the queue
     freeQueue(queue);
