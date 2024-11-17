@@ -122,6 +122,26 @@ int main() {
     printf("\nStack after popping:\n");
     displayStack(stack);
 
+    // Add more characters
+    printf("\nAdding more characters to the stack:\n");
+    push(stack, "Bobby Singer");
+    push(stack, "Charlie Bradbury");
+    push(stack, "Jack Kline");
+
+    // Display the updated stack
+    printf("\nUpdated stack:\n");
+    displayStack(stack);
+
+    // Empty the stack completely
+    printf("\nEmptying the stack:\n");
+    while (stack->top != NULL) {
+        pop(stack);
+    }
+
+    // Try to pop from an empty stack
+    printf("\nTrying to pop from an empty stack:\n");
+    pop(stack);
+
     // Free the stack
     freeStack(stack);
 
